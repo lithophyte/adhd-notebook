@@ -1,4 +1,4 @@
-const CACHE='adhd-notebook-v2.1';
+const CACHE='adhd-notebook-v2.2';
 const CORE=['./','./index.html','./manifest.webmanifest','./icon.svg'];
 
 self.addEventListener('install', event => {
