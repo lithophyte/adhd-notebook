@@ -1,4 +1,4 @@
-const CACHE='adhd-notebook-v2.2';
+const CACHE='adhd-notebook-v3';
 const CORE=['./','./index.html','./manifest.webmanifest','./icon.svg'];
 
 self.addEventListener('install', event => {
@@ -18,10 +18,7 @@ self.addEventListener('fetch', event => {
   const req = event.request;
   if (req.method !== 'GET') return;
   const url = new URL(req.url);
-
-  // Let third-party font/CDN requests use the browser's normal HTTP cache.
   if (url.origin !== self.location.origin) return;
-
   event.respondWith((async () => {
     try {
       const fresh = await fetch(req, {cache:'no-cache'});
