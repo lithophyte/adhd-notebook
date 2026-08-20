@@ -1,0 +1,19 @@
+i had this idea because every single planner app on the app store is either an unholy mess of like 27 task notifications at 7am or a $100 a year at best subscription
+use if you're like me (little raccoon brain) and need to function
+features:
+- shows large daily events (doctor appointment, work) at the start of the day and hides small, routine tasks until they're more immediately due
+- collapsible morning, afternoon, and evening routine sections if you want to check what you need to do today and then put it away
+- routines are within a time frame (7am-10am) instead of just a blaring DO NOW alarm, so before 7am = hidden, after 7am = available but unobtrusive, around 9am = more prominent, nearing 10am = more urgent task notification
+- recurring events
+- each task has the option of "always show", "show x hours before", or "show when due"
+- notes/do at some point section that can be added to tasks when you're up for it
+- tasks disappear in their own collapsible section once completed for less visual clutter
+- rainbow color coding based on priority
+- graphs that show percentage completion for recurring tasks
+- the ability to skip, snooze, or roll a task over to the next day
+- "TOO MUCH" button - everything disappears except the next fixed time event, anything genuinely urgent, and a task of your choosing if desired
+- "leave house by" timer for events
+- "TODAY HAS CHANGED" - if it's late in the day and things just aren't working out... it doesn't scream EVERYTHING IS OVERDUE. it simply gives you the option to replan the remainder of tasks
+- prep prompts (ie bring insurance card if you're headed to a doctor appointment)
+- a very cute minimalist bujo design to also help reduce visual clutter
+enjoy!!!
