@@ -1,4 +1,4 @@
-const CACHE='adhd-notebook-v4';
+const CACHE='adhd-notebook-v5';
 const CORE=['./','./index.html','./manifest.webmanifest','./icon.svg'];
 
 self.addEventListener('install', event => {
@@ -31,5 +31,19 @@ self.addEventListener('fetch', event => {
       if (req.mode === 'navigate') return caches.match('./index.html');
       throw err;
     }
+  })());
+});
+
+self.addEventListener('notificationclick', event => {
+  event.notification.close();
+  event.waitUntil((async () => {
+    const windows = await self.clients.matchAll({type:'window', includeUncontrolled:true});
+    for (const client of windows) {
+      if ('focus' in client) {
+        await client.focus();
+        return;
+      }
+    }
+    if (self.clients.openWindow) await self.clients.openWindow('./');
   })());
 });
